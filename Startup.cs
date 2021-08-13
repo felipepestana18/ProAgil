@@ -49,6 +49,7 @@ namespace ProAgil.API
            // app.UseHttpsRedirection();
            //Adicionar a politica para ser acessado no front-end
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
